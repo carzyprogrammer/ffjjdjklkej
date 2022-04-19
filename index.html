@@ -4,8 +4,10 @@
  <meta charset="UTF-8">
  <title>foodfun</title>
  <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+  
  
 <div class="wrapper">
     <div class="multi_color_border"></div>
@@ -39,7 +41,28 @@
   </div>
   
   
+  
 </div>
+<div class="topnav">
+  <a href="home" >welcome to our food cafe </a>
+  <div id="myLinks">
+    <a href="#news">Today special</a>
+    <a href="#contact">Today offers</a>
+    <a href="#about">About</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+    <script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+    
 
 </body>
 </html>
